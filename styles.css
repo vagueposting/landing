@@ -92,6 +92,7 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin: 3rem 0rem;
 }
 
 .info h1 {
@@ -110,6 +111,7 @@ button {
 .card {
     max-width: 250px;
     text-align: center;
+    font-size: 110%;
 }
 
 .card img {
@@ -138,4 +140,44 @@ button {
     font-weight: bold;
     align-self: flex-end;
     font-size: 24px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #3882f6;
+    margin: 5rem 20rem;
+    padding: 2.5rem 5rem;
+    font-size: 24px;
+    color: #e5e7eb;
+}
+
+.cta .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.cta .text b {
+    font-size: 110%;
+}
+
+.cta button {
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    width: 150px;
+    height: 100px;
+    font-size: 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 2.5em 0em;
 }
