@@ -3,8 +3,11 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
     font-family: 'Roboto', serif;
 }
+
+/* Header and Hero Text info */
 
 .header {
     display: flex;
@@ -31,19 +34,23 @@ a {
 
 button {
     background-color: #3882f6;
+    color: #f9faf8;
     border: none;
     border-radius: 4px;
 }
 
 .hero {
     display: flex;
-    justify-content: space-evenly;
-    padding: 48px 0px;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px 96px;
 }
 
 .hero .text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 600px;
 }
 
 .hero .text button {
@@ -68,4 +75,67 @@ button {
 .hero .text h1 {
     font-size: 48px;
     font-weight: 900;
+}
+
+.hero img {
+    min-width: 300px;
+    width: 600px;
+    min-height: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Information boxes */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.info h1 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    max-width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #3882f6;
+    border-radius: 16px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 30rem;
+}
+
+.quote p i {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote .source {
+    font-weight: bold;
+    align-self: flex-end;
+    font-size: 24px;
 }
